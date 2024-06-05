@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+:root{
+    --bs-light: #8FB1E4;
+    --bs-primary: #3A61A2;
+    --dark: #435169;
+    --secondary: #FF8903;    
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.7;
+    color: #516171;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700 !important;
+    color: #092032;
+}
+
+.text-primary{
+    color: var(--bs-primary) !important;
+}
+
+.text-secondary{
+    color: var(--secondary) !important;
+}
+
+.btn-primary{
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    color: white;
+    transition: transform 0.3s ease; 
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+}
+
+a {
+    color: #092032;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-cover::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1 ;
+}
+
+.bg-primary{
+    background: var(--bs-primary) !important;
+}
+
+.bg-secondary{
+    background: var(--secondary) !important;
+}
+
+/* ----- NAVBAR ----- */
+.top-nav {
+    background-color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: #000;
+}
+
+.top-nav i,
+.top-nav span {
+    vertical-align: middle;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background-color: #e0e9f0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bs-primary);
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.social-links a:hover {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.navbar {
+    box-shadow: 0px 4px  8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item a{
+    color: white;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--secondary);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+    color: #092032;
+}
+
+.navbar-brand span {
+    color: var(--bs-primary) !important;
+}
+
+.img_logo{
+    width: 90px;
+    height: 49px;
+}
+/* ----- BUTTON ----- */
+
+.btn {
+    padding: 9px 24px;
+    transition: 0.5s;
+}
+
+.btn-language {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.btn-language img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+/* ----- CAROUSEL ----- */
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5{
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    top: 2rem;
+}
+
+.slider-btn{
+    margin-top: 30px;
+}
+
+.slider-btn .btn{
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 5;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;   
+}
+
+.slider-btn .btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* ----- ICONS ----- */
+.icon{
+    padding: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff !important;
+    border-radius: 50px;
+    border: 1px dashed var(--bs-primary) !important;
+}
+
+/* ----- SECCION DE TITULO ----- */
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+    background: var(--bs-primary);
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 5px;
+    left: -60px;
+    background: var(--bs-primary);
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+/* ----- SECCION "LISTA TOURS" ----- */
+.tour-item{
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.tour-item img{
+    transition: 0.5s;
+}
+
+.tour-item:hover img{
+    transform: scale(1.1);
+}
+
+.tour-item .btn{
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.tour-item .overflow-hidden {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.tour-item .overflow-hidden img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.icon-container i {
+    border: 1px solid var(--bs-light);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--bs-primary);
+}
+
+.tour-item .action-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-container {
+    width: 100%;
+}
+
+.btn-container .btn {
+    width: 100%;
+}
+
+/* ----- TESTIMONIOS-SLIDER ----- */
+.testimonial-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.testimonial-carousel::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 300px;
+    }
+}
+
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    background-color: #e0e9f0 !important;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+/* ----- SECCION "FOOTER" ----- */
+
+/* === RESPOSIVE CSS === */
