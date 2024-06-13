@@ -15,11 +15,13 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- archivo css -->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/info_style.css" />
+    <link rel="stylesheet" href="css/style.css" />    
 </head>
 
 <body>
+    <!--======== MODAL RESERVA ========-->
+
     <!--======== NAVBAR ========-->
     <?php include 'components/navbar.php'; ?>
 
@@ -50,7 +52,7 @@
                     <h3 class="semi-bold">Tarifa Adulto:</h3>
                     <h1>$1,400.00 MXN</h1>
                     <p class="text-secondary semi-bold" style="font-size: 14px;">IMPUESTOS INCLUIDOS</p>
-                    <button class="btn btn-primary w-100">RESERVAR AHORA</button>
+                    <a class="btn btn-primary w-100" href="reserva_prueba.php">¡RESERVAR AHORA!</a>
                 </div>
                 <p class="text-center semi-bold">LOS HUESPEDES MENORES DE 12 AÑOS DEBERAN ESTAR ACOMPAÑADOS POR EL PADRE O TUTOR TODO EL TIEMPO.</p>
                 <div class="row icon-grid">
@@ -174,15 +176,95 @@
                         <p>Barra</p>
                     </div>
                 </div>
-            </div>
-    
-    
+                <!--**Info tour**-->
+                <div class="row mt-5 horario-icons mb-5">
+                    <!--Comidas-->
+                    <div class="col-md-4 mb-3">
+                        <!--Desayuno-->
+                        <div class="p-4 bg-light text-center mb-3">
+                            <div class="row">
+                                <!------>
+                                <div class="col-md-4"><i class="bi bi-cup-hot-fill p-0 mb-0"></i></div>
+                                <!------>
+                                <div class="col text-start">
+                                    <h3 class="semi-bold">Desayuno</h3>
+                                    <ul class="item-comida">
+                                        <li>Chilaquiles con huevo</li>
+                                        <li>Hot cakes</li>
+                                        <li>Fruta de temporada con yogurth</li>
+                                        <li>Jugo de naranaja</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--Comida-->
+                        <div class="p-4 bg-light text-center mb-4">
+                            <div class="row">
+                                <!------>
+                                <div class="col-md-4"><i class="fa-solid fa-utensils"></i></div>
+                                <!------>
+                                <div class="col text-start">
+                                    <h3 class="semi-bold">Comida</h3>
+                                    <ul class="item-comida">
+                                        <li>Baguette de carnes frias</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary w-100" href="reserva_prueba.php">¡RESERVAR AHORA!</a>
+                    </div>
+                    <!--Fotos ballenas-->
+                    <div class="col-md-4 mb-3 pb-2">
+                        <div class="text-center">
+                            <img src="images/list-tour5.jpg" alt="" class="mb-3 img-foto-incluye">
+                            <img src="images/list-tour5.jpg" alt="" class="mb-3 img-foto-incluye">
+                        </div>
+                    </div>
+                    <!--Recomendaciones y calendario-->
+                    <div class="col-md-4 mb-3">
+                        <!--Calendario-->
+                        <div class="p-4 bg-light text-start mb-3">                            
+                            <h4 class="mb-3 mini-title">Recomendaciones</h4>
+                            <ul class="item-comida m-0">
+                                <li>Cámara impermeable</li>
+                                <li>Efectivo / Tarjetas de debito o crédito</li>
+                                <li>Protección solar</li>
+                                <li>Sombrero y gafas de sol</li>
+                                <li>Ropa ligera</li>
+                                <li>Calzado cómodo</li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <!--Recomn-->
+                        <div class="p-4 bg-light text-start mb-3">                            
+                            <h4 class="mb-3 mini-title">Recomendaciones</h4>
+                            <ul class="item-comida m-0">
+                                <li>Cámara impermeable</li>
+                                <li>Efectivo / Tarjetas de debito o crédito</li>
+                                <li>Protección solar</li>
+                                <li>Sombrero y gafas de sol</li>
+                                <li>Ropa ligera</li>
+                                <li>Calzado cómodo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>                
         </div>
     </div>
 
     <!--======== FOOTER ========-->
     <?php include 'components/footer.php'; ?>
 
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>    
+    <!-- JQUERY CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>    
+    <!-- JS FILE -->
+    <script src="js/main.js"></script>
     </body>
 
 </html>
